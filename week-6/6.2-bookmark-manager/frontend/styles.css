@@ -1,32 +1,76 @@
-body {
-  /*start here  */
- }
-   
- .container {
-  /*start here  */
- }
-   
- h1 {
-    /*start here  */
- }
-    
- button {
-   /*start here  */
- }
-   
- #bookmark-list {
-  /*start here  */
- }
-   
- #bookmark-list li {
-  /*start here  */
- }
-   
- button.favorite-btn {
-  /*start here  */
- }
-   
- button.delete-btn {
-  /*start here  */
- }
-   
+/* Parent container to center the entire page */
+body{
+  color: white;
+  background-image: url(https://imgs.search.brave.com/yEpkA7woZTg3wZkFBPCL12VvDDeOkYu7_NVlMYcf3lE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ3/Mzg5MTM5NS92ZWN0/b3Ivc2VhbWxlc3Mt/cGF0dGVybi13aXRo/LXdvbWVuLWhpZGRp/bmctYmVmb3JlLXRo/ZS1ib29rLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz0wY1hK/cTE5TzBjRzlSd2Zf/Zi1WeV9mLTZNdzFr/QVY1WnVDbXMzSzhu/bFQ0PQ);
+}
+#parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+h1 {
+  font-size: 50px;
+  box-shadow: 0px 2px 0px rgba(121, 218, 242, 0.8);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  min-height: 80vh;
+}
+
+input[type="text"]{
+  align-content: center;
+  border-radius: 5px;
+  width: 300px;
+}
+
+form {
+  padding-bottom: 20px;
+  box-shadow: 0px 2px 0px rgba(121, 218, 242, 0.8);
+  margin-bottom: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+::placeholder{
+  text-align: center;
+  text-decoration: wavy;
+  font-size: 14px;
+}
+
+button {
+  background-color: rgb(121, 218, 242);
+  border-color: rgb(121, 218, 242);
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  font-weight: 600px;
+}
+
+button:hover {
+  background-color: rgb(44, 195, 233);
+}
+
+.bookmark-container{
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  padding-left: 20px;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(121, 218, 242, 0.4);
+}
